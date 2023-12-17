@@ -6,7 +6,7 @@ function Test() {
   const testValue = useAppSelector((state) => state.testReducer.testValue);
   return (
     <>
-      <h1>{testValue}</h1>
+      <h1 className="text-red-100 w-4 h7 border-black">{testValue}</h1>
     </>
   );
 }

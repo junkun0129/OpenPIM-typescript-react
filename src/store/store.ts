@@ -4,6 +4,8 @@ import { persistStore, persistReducer } from "redux-persist";
 import { combineReducers } from "redux";
 import { testReducer } from "./slices/testSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { TypedUseSelectorHook } from "react-redux";
+import { userReducer } from "./slices/userSlice";
 
 const persistConfig = {
   key: "root",
@@ -13,6 +15,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   testReducer,
+  userReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
