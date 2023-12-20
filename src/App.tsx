@@ -16,7 +16,8 @@ function App() {
   console.log(userSelector.id);
   return (
     <>
-      <BrowserRouter>
+      <MainPage></MainPage>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage></LoginPage>}></Route>
           <Route
@@ -24,7 +25,7 @@ function App() {
             element={<MainPage></MainPage>}
           ></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
