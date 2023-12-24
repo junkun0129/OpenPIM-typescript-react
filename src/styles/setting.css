@@ -1,33 +1,23 @@
-/* src/styles/tailwind.css */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 /* scrollbar.css */
 
 /* WebKitブラウザのスクロールバーをカスタマイズする */
 /* スクロールバー全体 */
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 12px;
 }
 
 /* スクロールバーのトラック（バックグラウンド） */
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #f1f1f1;
 }
 
 /* スクロールバーのスクロール可能領域 */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #888;
   border-radius: 6px;
 }
 
 /* スクロールバーのコーナー */
 ::-webkit-scrollbar-corner {
-  background: white;
-}
-
-::-webkit-scrollbar-horizontal {
-  display: none;
-  height: 0px;
+  background: transparent;
 }

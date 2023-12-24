@@ -10,7 +10,6 @@ import "./styles/index.css";
 import LoginPage from "./pages/LoginPage";
 import MainPage from "./pages/MainPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 function App() {
   const userSelector = useAppSelector((state) => state.userReducer);
   console.log(userSelector.id);
